@@ -192,41 +192,22 @@ stroked2 = { "colour": True, "stroke": [((0, 0, 0, 1), 2.0)], "fill": [(1, 1, 1,
 stroked3 = { "colour": True, "stroke": [((0, 0, 0, 1), 2.5)], "fill": [(1, 1, 1, 1), (1, 1, 1, 1)] }
 
 # For extra glyph support, add your preferred font to the font array
-Sans = (["LinBiolinum_Rah.ttf","FreeSans.ttf"], FontLoader.FT_LOAD_DEFAULT)
-Sans_Bold = (["LinBiolinum_RBah.ttf","FreeSansBold.ttf"], FontLoader.FT_LOAD_DEFAULT)
-Sans_Italic = (["LinBiolinum_RIah.ttf","FreeSansOblique.ttf"], FontLoader.FT_LOAD_DEFAULT)
-SansMono = (["DejaVuSansMono.ttf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
-Serif = (["texgyrepagella-regular.otf","FreeSerif.ttf"], FontLoader.FT_LOAD_NO_HINTING)
-Serif_Bold = (["texgyrepagella-bold.otf","FreeSerifBold.ttf"], FontLoader.FT_LOAD_NO_HINTING)
+Orkney = (["Orkney Regular.ttf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
+SourceCodePro = (["SourceCodePro-Regular.ttf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
+CodeNewRoman = (["cnr.otf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
+
 
 # Define the size differences used to render different fallback fonts
 # I.e. when adding a fallback font has smaller glyphs than the original, you can bump it
 dsizes = {'HanaMinA.ttf': 2} # make the glyphs for the (chinese font 2 pts bigger)
 
 fonts = (
-    ("mono-10", SansMono, 10, filled),
-    ("mono-stroke-10", SansMono, 10, stroked2),
-    ("sans-9", Sans, 9, filled),
-    ("sans-10", Sans, 10, filled),
-    ("sans-12", Sans, 12, filled),
-    ("sans-13", Sans, 13, filled),
-    ("sans-14", Sans, 14, filled),
-    ("sans-16", Sans, 16, filled),
-    ("sans-bold-12", Sans_Bold, 12, filled),
-    ("sans-bold-13", Sans_Bold, 13, filled),
-    ("sans-bold-14", Sans_Bold, 14, filled),
-    ("sans-bold-16", Sans_Bold, 16, filled),
-    ("sans-bold-18", Sans_Bold, 18, filled),
-    ("sans-bold-20", Sans_Bold, 20, filled),
-    ("sans-bold-22", Sans_Bold, 22, filled),
-    ("sans-bold-24", Sans_Bold, 24, filled),
-    ("sans-stroke-12", Sans, 12, stroked2),
-    ("sans-bold-stroke-12", Sans_Bold, 12, stroked3),
-    ("sans-stroke-13", Sans, 13, stroked2),
-    ("sans-bold-stroke-13", Sans_Bold, 13, stroked3),
-    ("sans-stroke-14", Sans, 14, stroked2),
-    ("sans-bold-stroke-14", Sans_Bold, 14, stroked3),
-    ("sans-stroke-16", Sans, 16, stroked2),
+    ("orkney-16", Orkney, 16, filled),
+    ("orkney-18", Orkney, 18, filled),
+    ("sourcecodepro-16", SourceCodePro, 16, filled),
+    ("sourcecodepro-18", SourceCodePro, 18, filled),
+    ("codenewroman-16", CodeNewRoman, 16, filled),
+    ("codenewroman-18", CodeNewRoman, 18, filled),
 )
 
 for (name, (fontnames, loadopts), size, style) in fonts:
