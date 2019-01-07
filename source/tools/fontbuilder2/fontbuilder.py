@@ -202,12 +202,24 @@ CodeNewRoman = (["cnr.otf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
 dsizes = {'HanaMinA.ttf': 2} # make the glyphs for the (chinese font 2 pts bigger)
 
 fonts = (
+    ("orkney-12", Orkney, 12, filled),
+    ("orkney-14", Orkney, 14, filled),
     ("orkney-16", Orkney, 16, filled),
     ("orkney-18", Orkney, 18, filled),
+    ("orkney-20", Orkney, 20, filled),
+    ("orkney-22", Orkney, 22, filled),
+    ("sourcecodepro-12", SourceCodePro, 12, filled),
+    ("sourcecodepro-14", SourceCodePro, 14, filled),
     ("sourcecodepro-16", SourceCodePro, 16, filled),
     ("sourcecodepro-18", SourceCodePro, 18, filled),
+    ("sourcecodepro-20", SourceCodePro, 20, filled),
+    ("sourcecodepro-22", SourceCodePro, 22, filled),
+    ("codenewroman-12", CodeNewRoman, 12, filled),
+    ("codenewroman-14", CodeNewRoman, 14, filled),
     ("codenewroman-16", CodeNewRoman, 16, filled),
     ("codenewroman-18", CodeNewRoman, 18, filled),
+    ("codenewroman-20", CodeNewRoman, 20, filled),
+    ("codenewroman-22", CodeNewRoman, 22, filled)
 )
 
 for (name, (fontnames, loadopts), size, style) in fonts:
