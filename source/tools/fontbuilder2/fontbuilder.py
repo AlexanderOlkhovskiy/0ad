@@ -196,6 +196,11 @@ Orkney = (["Orkney Regular.ttf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
 SourceCodePro = (["SourceCodePro-Regular.ttf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
 CodeNewRoman = (["cnr.otf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
 
+OrbitronBlack = (["orbitron-black.otf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
+OrbitronBold = (["orbitron-bold.otf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
+OrbitronLight = (["orbitron-light.otf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
+OrbitronMedium = (["orbitron-medium.otf","FreeMono.ttf"], FontLoader.FT_LOAD_DEFAULT)
+
 
 # Define the size differences used to render different fallback fonts
 # I.e. when adding a fallback font has smaller glyphs than the original, you can bump it
@@ -219,7 +224,35 @@ fonts = (
     ("codenewroman-16", CodeNewRoman, 16, filled),
     ("codenewroman-18", CodeNewRoman, 18, filled),
     ("codenewroman-20", CodeNewRoman, 20, filled),
-    ("codenewroman-22", CodeNewRoman, 22, filled)
+    ("codenewroman-22", CodeNewRoman, 22, filled),
+
+    ("orbitron-black-12", OrbitronBlack, 12, filled),
+    ("orbitron-black-14", OrbitronBlack, 14, filled),
+    ("orbitron-black-16", OrbitronBlack, 16, filled),
+    ("orbitron-black-18", OrbitronBlack, 18, filled),
+    ("orbitron-black-20", OrbitronBlack, 20, filled),
+    ("orbitron-black-22", OrbitronBlack, 22, filled),
+
+    ("orbitron-bold-12", OrbitronBold, 12, filled),
+    ("orbitron-bold-14", OrbitronBold, 14, filled),
+    ("orbitron-bold-16", OrbitronBold, 16, filled),
+    ("orbitron-bold-18", OrbitronBold, 18, filled),
+    ("orbitron-bold-20", OrbitronBold, 20, filled),
+    ("orbitron-bold-22", OrbitronBold, 22, filled),
+
+    ("orbitron-light-12", OrbitronLight, 12, filled),
+    ("orbitron-light-14", OrbitronLight, 14, filled),
+    ("orbitron-light-16", OrbitronLight, 16, filled),
+    ("orbitron-light-18", OrbitronLight, 18, filled),
+    ("orbitron-light-20", OrbitronLight, 20, filled),
+    ("orbitron-light-22", OrbitronLight, 22, filled),
+
+    ("orbitron-medium-12", OrbitronMedium, 12, filled),
+    ("orbitron-medium-14", OrbitronMedium, 14, filled),
+    ("orbitron-medium-16", OrbitronMedium, 16, filled),
+    ("orbitron-medium-18", OrbitronMedium, 18, filled),
+    ("orbitron-medium-20", OrbitronMedium, 20, filled),
+    ("orbitron-medium-22", OrbitronMedium, 22, filled),
 )
 
 for (name, (fontnames, loadopts), size, style) in fonts:
